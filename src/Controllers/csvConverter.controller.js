@@ -28,7 +28,7 @@ class csvController {
       parseFile
         .on("data", async (line) => {
           const lineData = {
-            id: 1 + Database.length,
+            id: Database.length,
             name: line.Nome,
             job: line.Cargo,
             birt: line.Nascimento,

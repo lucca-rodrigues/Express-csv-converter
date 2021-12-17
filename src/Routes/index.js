@@ -7,6 +7,6 @@ const csvConverterController = require("../Controllers/csvConverter.controller")
 const routes = Router();
 
 routes.post("/upload", upload.single("file"), csvConverterController.upload);
-// routes.get("/", csvConverterController.upload);
+routes.get("/details", csvConverterController.index);
 
 module.exports = routes;
